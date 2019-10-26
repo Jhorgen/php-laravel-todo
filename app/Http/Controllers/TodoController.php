@@ -29,7 +29,7 @@ class TodoController extends Controller
 
     public function destroy($id){
         Todo::destroy($id);
-        return return redirect()->route('todos.index')
+        return redirect()->route('todos.index')
         ->with('success', 'Task deleted');
     }
 }
