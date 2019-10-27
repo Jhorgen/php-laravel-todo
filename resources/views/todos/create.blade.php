@@ -2,13 +2,13 @@
 @section('content')
 <div class="row">
  <div class="col-sm-12">
-  <div class="pull-left">
-   <h2>Add New Task</h2>
+   <a href="{{route('todos.index')}}" class="btn btn-success btn-block">
+     Go Back
+   </a>
+  <div>
+   <h2 style='text-align:center;'>Add New Task</h2>
   </div>
   <div>
-   <a href="{{route('todos.index')}}" class="btn btn-success btn-block">
-    Go Back
-   </a>
   </div>
  </div>
 </div>
@@ -25,6 +25,6 @@
 @endif
 
 {!! Form::open(array('route' => 'todos.store', 'method' => 'POST')) !!}
-<strong>test</strong>
+ @include('todos.form')
 {!! Form::close() !!}
 @endsection
