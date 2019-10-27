@@ -33,3 +33,5 @@ class TodoController extends Controller
         ->with('success', 'Task deleted');
     }
 }
+
+?>

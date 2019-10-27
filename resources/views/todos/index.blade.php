@@ -1,9 +1,9 @@
 @extends('layouts.default')
 @section('content')
-<div class="row" style='background-color: beige;'>
+<div class="row" style='background-color: coral;'>
  <div class="col-sm-12">
-  <div style='text-align: center; background-color: coral; color: white; border-radius: 15px; width: 50%; margin-left: 400px; margin-bottom: 10px;'>
-    <h2>Todo List</h2>
+  <div style='text-align: center; background-color: coral; color: white; border-radius: 15px; margin-bottom: 10px;'>
+    <h1>Todo List</h1>
     </div>
     <div>
      <a href="{{route('todos.create')}}"

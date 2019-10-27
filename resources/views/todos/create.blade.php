@@ -24,5 +24,7 @@
 </div>
 @endif
 
-
+{!! Form::open(array('route' => 'todos.store', 'method' => 'POST')) !!}
+<strong>test</strong>
+{!! Form::close() !!}
 @endsection

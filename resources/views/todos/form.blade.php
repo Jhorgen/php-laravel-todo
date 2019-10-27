@@ -6,7 +6,7 @@
       </div>
 
       <div class="col-sm-12">
-        <button class="btn btn-block btn-success" type="button" name="button"></button>
+        <button class="btn btn-block btn-success">Submit</button>
       </div>
     </div>
 </div>
