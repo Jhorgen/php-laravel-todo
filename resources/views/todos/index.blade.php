@@ -1,8 +1,8 @@
 @extends('layouts.default')
 @section('content')
-<div class="row">
+<div class="row" style='background-color: beige;'>
  <div class="col-sm-12">
-  <div class="pull-left">
+  <div style='text-align: center; background-color: coral; color: white; border-radius: 15px; width: 50%; margin-left: 400px; margin-bottom: 10px;'>
     <h2>Todo List</h2>
     </div>
     <div>
@@ -14,7 +14,7 @@
  </div>
 </div>
 
-@if($message Session:get('success'))
+@if($message = Session::get('success'))
  <div class="alert alert-success">
   <p>{{$message}}</p>
  </div>

@@ -1,4 +1,4 @@
-@extends('layout.default')
+@extends('layouts.default')
 @section('content')
 <div class="row">
  <div class="col-sm-12">
@@ -13,7 +13,7 @@
  </div>
 </div>
 
-@if(count($errors) > 0 )
+@if(count($errors) > 0)
 <div class="alert alert-danger">
  <strong>Something went wrong</strong>
   <ul>
@@ -24,7 +24,5 @@
 </div>
 @endif
 
-{!! Form::open(array('route' => 'todos.store', 'method' = 'POST')) !!}
- @include('todos.form')
-{!! Form:close() !!}
+
 @endsection

@@ -10,7 +10,7 @@ class TodoController extends Controller
     //
     public function index(){
         $todos = Todo::latest()->paginate(10);
-        return view('todo.index', compact('todos'))
+        return view('todos.index', compact('todos'))
         ->with('i', (request()->input('page', 1) -1) * 5);
     }
 
@@ -22,7 +22,7 @@ class TodoController extends Controller
         request()->validate([
             'todo' => 'required',
         ]);
-        Todo::create($request->all())
+        Todo::create($request->all());
         return redirect()->route('todos.index')
         ->with('success', 'Task created successfully');
     }
